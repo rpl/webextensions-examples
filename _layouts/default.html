@@ -9,7 +9,6 @@
 
 <h1 id="my-heading-1">This is a web page for testing content scripts</h1>
 
-<div id = "about-this-page">
 <h2>About this page</h2>
 
 <p>This is a web page for testing the kind of access content scripts get to the web pages they run inside.
@@ -22,14 +21,12 @@ The page includes a page script, which does three things:
   <li>redefines the build-in window.confirm() function.</li>
 </ul>
 
-You can see this by pressing the buttons below:
-<input type="button" id="highlight-para" value="Highlight the paragraph">
-<input type="button" id="show-foo" value="Get the value of foo">
-<input type="button" id="show-window.confirm" value="Call window.confirm()">
+You can see this by pressing the buttons below:<br/>
+<input type="button" id="highlight-para" value="Highlight the paragraph"><br/>
+<input type="button" id="show-foo" value="Get the value of foo"><br/>
+<input type="button" id="show-window.confirm" value="Call window.confirm()"><br/>
 
 <div class="output"></div>
-
-</div>
 
 <script src="page-scripts/page-script.js"></script>
 

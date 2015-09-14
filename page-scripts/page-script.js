@@ -27,9 +27,9 @@ function handleHighlightPara() {
 }
 
 function handleShowFoo() {
-
+  output.textContent = "window.foo=" + window.foo;
 }
 
 function handleShowWindowConfirm() {
-
+  output.textContent = "window.confirm=" + window.confirm.toSource();
 }

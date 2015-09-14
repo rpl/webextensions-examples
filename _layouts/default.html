@@ -3,13 +3,33 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-<link rel="stylesheet" href="stylesheets/styles.css" type="text/css"/>
+<link rel="stylesheet" href="page-styles/styles.css" type="text/css"/>
 </head>
 <body>
 
 <h1 id="my-heading-1">This is a web page for testing content scripts</h1>
 
-<p>Here's some content.</p>
+<div id = "about-this-page">
+<h2>About this page</h2>
+
+<p>This is a web page for testing the kind of access content scripts get to the web pages they run inside.
+The page includes a page script, which does three things:
+</p>
+
+<ul>
+  <li>Adds a new paragraph, which we've highlighted with a red border.</li>
+  <li>Adds a new variable "foo" to the global window object.</li>
+  <li>redefines the build-in window.confirm() function.</li>
+</ul>
+
+You can see this by pressing the buttons below:
+<input type="button" id="highlight-para" value="Highlight the paragraph">
+<input type="button" id="show-foo" value="Get the value of foo">
+<input type="button" id="show-window.confirm" value="Call window.confirm()">
+
+<div class="output"></div>
+
+</div>
 
 <script src="page-scripts/page-script.js"></script>
 

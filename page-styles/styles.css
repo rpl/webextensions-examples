@@ -8,11 +8,11 @@
    width:600px;
    margin:0 auto;
 }
-#left_col {
+#left-column {
    float:left;
    width:300px;
 }
-#right_col {
+#right-column {
    float:right;
    width:300px;
 }

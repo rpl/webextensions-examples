@@ -9,27 +9,5 @@ window.confirm = function() {
   alert("The page script has also redefined 'confirm'");
 }
 
-// UI stuff
-
-var output = document.getElementById("output");
-
-var highlightPara = document.getElementById("highlight-para");
-var showFoo = document.getElementById("show-foo");
-var showWindowConfirm = document.getElementById("call-window.confirm");
-
-highlightPara.addEventListener("click", handleHighlightPara, false);
-showFoo.addEventListener("click", handleShowFoo, false);
-showWindowConfirm.addEventListener("click", handleCallWindowConfirm, false);
-
-function handleHighlightPara() {
-  var pageScriptPara = document.getElementById("page-script-para");
-  pageScriptPara.style.backgroundColor = "red";
-}
-
-function handleShowFoo() {
-  output.textContent = "window.foo=" + window.foo;
-}
-
-function handleCallWindowConfirm() {
-  window.confirm("are you sure?");
-}
+// add controls
+insertControls(document.getElementById("left-column"), "Page script controls");

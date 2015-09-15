@@ -30,6 +30,6 @@ function handleShowFoo() {
   output.textContent = "window.foo=" + window.foo;
 }
 
-function handleShowWindowConfirm() {
-  output.textContent = "window.confirm=" + window.confirm.toSource();
+function handleCallWindowConfirm() {
+  window.confirm("are you sure?");
 }

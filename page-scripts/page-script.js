@@ -15,11 +15,11 @@ var output = document.getElementById("output");
 
 var highlightPara = document.getElementById("highlight-para");
 var showFoo = document.getElementById("show-foo");
-var showWindowConfirm = document.getElementById("show-window.confirm");
+var showWindowConfirm = document.getElementById("call-window.confirm");
 
 highlightPara.addEventListener("click", handleHighlightPara, false);
 showFoo.addEventListener("click", handleShowFoo, false);
-showWindowConfirm.addEventListener("click", handleShowWindowConfirm, false);
+showWindowConfirm.addEventListener("click", handleCallWindowConfirm, false);
 
 function handleHighlightPara() {
   var pageScriptPara = document.getElementById("page-script-para");

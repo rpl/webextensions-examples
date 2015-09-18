@@ -1,6 +1,6 @@
 var messenger = document.getElementById("from-page-script");
 
-messenger.addEventListener("click", sendMessage);
+messenger.addEventListener("click", messageContentScript);
 
 function messageContentScript() {
   window.postMessage({

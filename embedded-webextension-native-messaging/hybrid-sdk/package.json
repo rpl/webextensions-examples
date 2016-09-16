@@ -1,0 +1,12 @@
+{
+  "id": "ping_pong_hybrid_sdk@example.org",
+  "version": "0.2.0",
+  "main": "./main.js",
+  "name": "sdk-addon-name",
+  "fullName": "SDK Addon Name",
+  "description": "An hybrid SDK addon which uses connectNative",
+  "engines": {
+    "firefox": ">= 51",
+  },
+  "hasEmbeddedWebExtension": true
+}

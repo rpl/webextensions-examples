@@ -1,0 +1,10 @@
+{
+  "name": "ping_pong_hybrid",
+  "description": "Example host for native messaging",
+  "path": "/path/to/embedded-webextension-native-messaging/app/ping_pong.py",
+  "type": "stdio",
+  "allowed_extensions": [
+    "ping_pong_hybrid_bootstrapped@example.org",
+    "ping_pong_hybrid_sdk@example.org"
+  ]
+}

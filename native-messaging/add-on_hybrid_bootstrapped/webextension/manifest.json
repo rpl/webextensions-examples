@@ -1,0 +1,26 @@
+{
+  "description": "integrate a legacy addon with connectNative",
+  "manifest_version": 2,
+  "name": "native-messaging-hybrid",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/message.svg"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "ping_pong_hybrid_bootstrapped@example.org",
+      "strict_min_version": "51.0a1"
+    }
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/message.svg"
+  },
+
+  "permissions": ["nativeMessaging", "notifications"]
+}

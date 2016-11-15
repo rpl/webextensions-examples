@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Externally Connectable ContentScript",
+  "version": "1.0.1",
+  "description": "Provide an 'externally_connectable'-like API to a webpages domain using a content script",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://developer.mozilla.org/*"],
+      "js": ["externally_connectable.js"]
+    }
+  ]
+}

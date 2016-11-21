@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Filter content script logs 101",
+  "version": "1.0.1",
+  "description": "Test how to filter content scripts logs and errors",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["content_script.js"]
+    }
+  ]
+}

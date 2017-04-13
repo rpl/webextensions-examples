@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "optional-permissions-example",
+  "version": "0.1.0",
+  "background": {
+    "scripts": ["bg.js"]
+  },
+  "browser_action": {
+    "default_title": "Ask for optional permission"
+  },
+  "permissions": ["notifications"],
+  "optional_permissions": ["tabs"]
+}
